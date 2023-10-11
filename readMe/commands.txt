@@ -1,0 +1,11 @@
+Commands to run test and to generate files
+
+To run all feature files
+npm run wdio
+
+To generate allure results:
+allure generate --clean
+
+To generate allure report:
+allure open
+

@@ -1,0 +1,25 @@
+Reading The File Contents
+
+
+Data in Json file:
+{
+    "p1" :  {
+                "name":"Blue Top"
+                
+            },
+
+    "p2" :  {
+                "name":"Blue Cotton Indie Mickey Dress"
+            }  
+
+}
+
+In tsconfig.json, set :
+"resolvePackageJsonImports": true    // within compilerOptions.
+
+Importing json file :
+import blueProduct from '../../data_driven/blueProduct.json' assert { type: "json" };
+
+
+
+

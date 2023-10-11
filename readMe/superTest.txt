@@ -1,0 +1,16 @@
+
+
+https://www.npmjs.com/package/supertest
+
+npm install supertest --save-dev
+
+Get Request Example:
+
+const request = await new supertest('https://automationexercise.com');
+const res = await request.get('/api/productsList');
+
+Post Request Example:
+
+const request = await new supertest('https://automationexercise.com');
+const res = await request.post('/api/searchProduct').send('search_product=jean' );
+.send() is used to add parameters

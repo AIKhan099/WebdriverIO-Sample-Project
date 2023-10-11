@@ -1,0 +1,11 @@
+{
+    
+    "Blue Top":"( //a[@data-product-id='1'])[1]",
+    "Sleeves Top and Short - Blue & Pink":"(//a[@class='btn btn-default add-to-cart'][normalize-space()='Add to cart'])[27]",
+    "Blue Cotton Indie Mickey Dress":"(//a[@class='btn btn-default add-to-cart'][normalize-space()='Add to cart'])[35]",
+    "Colour Blocked Shirt - Sky Blue":"(//a[@class='btn btn-default add-to-cart'][normalize-space()='Add to cart'])[41]",
+    "Grunt Blue Slim Fit Jeans": "(//a[@class='btn btn-default add-to-cart'][normalize-space()='Add to cart'])[27]",
+    "Beautiful Peacock Blue Cotton Linen Saree":"(//a[@class='btn btn-default add-to-cart'][normalize-space()='Add to cart'])[63]"
+
+}
+

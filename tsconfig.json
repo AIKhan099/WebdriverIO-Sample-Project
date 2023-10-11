@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "Node16",
+        "module": "Node16",
+        "target": "es2022",
+        "types": [
+            "node",
+            "@wdio/globals/types",
+            "expect-webdriverio",
+            "@wdio/cucumber-framework"
+        ],
+        "skipLibCheck": true,
+        "noEmit": true,
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "resolvePackageJsonImports": true
+    },
+    "include": [
+        "src"
+    ]
+}

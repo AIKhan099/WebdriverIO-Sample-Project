@@ -1,0 +1,39 @@
+A few important info regarding configuration:
+
+To run all feature file add path:
+
+specs: [
+        //'./features/**/*.feature',
+        './features/001_signup.feature',
+        './features/002_login.feature',
+        './features/003_Api_Testing.feature',
+        './features/004_addingBluePrducts.feature',
+
+    ],
+
+To add any feature to driver:
+
+capabilities: [{
+        browserName: 'chrome',
+        'goog:chromeOptions': { 
+            "prefs": {
+                credentials_enable_service: false,
+                profile: {
+                  password_manager_enabled: false
+                }
+              },
+            args: ["--disable-gpu", "--enable-automation"]
+       }
+    }],
+
+Add path of step definition files here:
+
+ cucumberOpts: {
+        // <string[]> (file/dir) require files before executing features
+        require: ['./features/step-definitions/001_signupStep.ts','./features/step-definitions/002_loginStep.ts',
+        './features/step-definitions/003_ApiTesing.ts', './features/step-definitions/004_addingBlueProductsStep.ts'],
+        // <boolean> show full backtrace for errors ...
+
+
+
+

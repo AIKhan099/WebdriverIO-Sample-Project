@@ -1,0 +1,38 @@
+Allure Reporter Installation:
+
+To install Allure Reporter, please follow the below steps:
+
+Like any dependency installation, it can be done by:
+npm install @wdio/allure-reporter --save-dev
+
+Once done, package.json will have the dependency added:
+"devDependencies": {
+    	"@wdio/allure-reporter": "^7.16.8",
+
+Allure Reporter Usage:
+
+Configure wdio.conf.js to use allure reports. Then, update “reporters” with allure and configure the output directory.
+reporters: [
+    	['allure', {
+    	outputDir: 'allure-results',
+	}]
+
+reporters: [
+     ['allure', {
+     outputDir: 'allure-results',
+ }]
+],
+This will generate the XML file once the test execution is done as shown below (along with multiple JSON files) at the location
+ given in outputDir:
+
+
+Now to generate HTML from this, we need another dependency – allure-commandline that can be installed using the below command:
+npm install -g allure-commandline --save-dev
+
+Execute the below command manually:
+
+To generate allure results:
+allure generate --clean
+
+To generate allure report:
+allure open
